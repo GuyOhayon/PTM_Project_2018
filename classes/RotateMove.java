@@ -51,10 +51,6 @@ public class RotateMove {
 		return (row) + "," + (column) + "," + numofrotate;
 	}
 
-	/// remove the static and switch:
-	/// RotateMove.getRotatesMoves(o,s)
-	/// to
-	/// (new RotateMove).getRotatesMoves(o,s)
 	public static Collection<RotateMove> getRotatesMoves(PipeGameMap pipeGameMapO, PipeGameMap pipeGameMapS)
 			throws Exception {
 		Collection<RotateMove> arrayList = new ArrayList<>();
@@ -69,7 +65,6 @@ public class RotateMove {
 			for (int c = 0; c < columns; c++) {
 				try {
 					RotateMove rotateMove = new RotateMove(pipeGameMapO.getTile(r, c), pipeGameMapS.getTile(r, c));
-					// System.out.println("rotateMove: "+rotateMove.toString());
 					if (rotateMove.numofrotate != 0) {
 						arrayList.add(rotateMove);
 					}

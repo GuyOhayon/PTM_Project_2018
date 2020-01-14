@@ -19,7 +19,6 @@ public class HillClimbing<T> implements Searcher<T> {
 		// Define the current state as an initial state
 		State<T> next = s.getInitialState();
 		Solution<T> result = new Solution<T>();
-		// System.out.println("HillClimbing");
 		long time0 = System.currentTimeMillis();
 		// Loop until the goal state is achieved or no more operators can be applied on
 		// the current state:

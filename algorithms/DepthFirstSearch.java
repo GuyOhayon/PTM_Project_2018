@@ -18,7 +18,6 @@ public class DepthFirstSearch<T> extends CommonSearcher<T>{
 	protected boolean addToOpenList(State<T> initialState) {
 
 		((Stack<State<T>>) openList).push(initialState);
-		//openStack.add(initialState);
 		return true;
 		
 	}
@@ -37,7 +36,6 @@ public class DepthFirstSearch<T> extends CommonSearcher<T>{
 		while(!openList.isEmpty()){
 			State<T> currentState=popOpenList();// dequeue
 			closedSet.add(currentState);
-			//System.out.println(currentState.toString());
 			if(s.IsGoalState(currentState))
 			{
 				try {

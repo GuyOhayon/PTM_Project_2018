@@ -187,7 +187,6 @@ public class PipeGameMap implements Serializable {
 					break;
 				}
 				default: {
-					// tile2=null;
 					break;
 				}
 				}

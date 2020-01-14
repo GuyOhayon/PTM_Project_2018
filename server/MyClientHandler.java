@@ -20,7 +20,7 @@ import classes.State;
 /**
  * @author Nathan Dillbary, ID 037070489 / Guy Ohayon, ID 30185171 
  * In charge of interacting with a client according to the specified protocol
- * Given a problem, this class will invoke the the implemented CacheManager for persistence operations 
+ * Given a problem, this class will invoke the implemented CacheManager for persistence operations
  */
 public class MyClientHandler implements ClientHandler {
 	CacheManager<Solution<PipeGameMap>> cacheManager=new MyCacheManager<PipeGameMap>();

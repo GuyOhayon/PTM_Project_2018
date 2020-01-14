@@ -14,7 +14,6 @@ public class BFS<T> extends CommonSearcher<T> {
 	}
 
 	protected boolean addToOpenList(State<T> initialState) {
-		//System.out.println("in: "+initialState.getCost());
 		return openList.add(initialState);
 
 	}
@@ -22,7 +21,6 @@ public class BFS<T> extends CommonSearcher<T> {
 	protected State<T> popOpenList() {
 		setEvaluatedNodes(getEvaluatedNodes() + 1);
 		State<T> state = ((LinkedList<State<T>>) openList).poll();
-		//System.out.println("out: "+state.getCost());
 		return state;
 	}
 }

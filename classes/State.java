@@ -17,7 +17,7 @@ public class State<T> implements Comparable<State<T>>, Serializable {
 	private double cost; // cost to reach this state
 	private State<T> cameFrom; // the state we came from to this state
 	
-	// C'tor chaining 
+	// C'Tor chaining
 	public State() {  
 		this(null, INFINITY, null);
 	}
